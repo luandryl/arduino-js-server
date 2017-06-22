@@ -31,7 +31,7 @@ app.post('/', function (req, res) {
 });
 
 app.get('/dispositivo/', function(req, res) {
-  if((new Date() - arduinoRequest) > 600)
+  if((new Date() - arduinoRequest) > 1000)
     res.status(500).send('Device Not Conected');
   else
     res.status(200).send('OK');
