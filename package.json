@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build/app.build.js",
+    "start": "node init.js",
     "build": "webpack",
     "test": "mocha --compilers js:babel-core/register",
     "dev": "nodemon init.js --exec babel-node"
