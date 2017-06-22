@@ -48,6 +48,6 @@ app.get('/:quem', function (req, res) {
   res.send(state);
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('web app listening on port 3000!');
 });
