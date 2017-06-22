@@ -42,9 +42,10 @@ app.get('/data/', function (req, res) {
 });
 
 app.get('/:quem', function (req, res) {
-  if (req.params.quem)
-    arduinoRequest = new Date();
   
+  if (req.params.quem === "arduino")
+    arduinoRequest = new Date();
+
   res.send(state);
 });
 
