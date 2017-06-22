@@ -1,5 +1,5 @@
 {
-  "name": "viniciuskleberjs",
+  "name": "mongoose",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,9 @@
     "start": "node ./build/app.build.js",
     "build": "webpack",
     "test": "mocha --compilers js:babel-core/register",
-    "dev": "nodemon index.js --exec babel-node"
+    "dev": "nodemon init.js --exec babel-node"
   },
-  "author": "Luan Andryl Silva",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -24,7 +24,8 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.14.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
     "mongoose": "^4.9.2",
     "morgan": "^1.8.1",
     "serve-favicon": "^2.4.2"
